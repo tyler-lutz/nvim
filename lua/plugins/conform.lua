@@ -6,8 +6,10 @@ return {
                 timeout_ms = 500,
                 lsp_format = "fallback",
             },
-            lua = { "stylua" },
-            go = { "goimports", "gofumpt" },
+            formatters_by_ft = {
+                lua = { "stylua" },
+                go = { "goimports", "gofumpt" },
+            }
         })
     end,
 }
